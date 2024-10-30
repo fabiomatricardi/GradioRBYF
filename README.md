@@ -1,6 +1,34 @@
 # GradioRBYF
 Gradio Interface for automatic Revised Benchmark with You as a Feedback
 
+This repo contains the code to run a full Auto-Test of the prompt Catalogue for Revised Benchmark wity You as a Feebback using the following stacck:
+- Ollama (as a backaend to serve the Models)
+- Gradio (as UI forntend)
+
+### The model we use here
+#### granite3-dense (2B)
+The IBM Granite 2B and 8B models are designed to support tool-based use cases and support for retrieval augmented generation (RAG), streamlining code generation, translation and bug fixing.
+```
+ollama run granite3-dense
+```
+Model card shortly (from [source](https://ollama.com/library/granite3-dense))
+```
+arch:         granite
+parameters:   2.63B
+quantization: Q4_K_M
+GGUF size:    1.6GB
+```
+
+
+### how to use it
+- clone the repo
+- install the requirements
+- [download and install Ollama](https://ollama.com/download)
+- download and run granite3-dense (2B)
+- run the gradio app
+
+
+---
 
 
 # About Gradio
